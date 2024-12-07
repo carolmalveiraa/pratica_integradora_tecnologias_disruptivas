@@ -1,13 +1,75 @@
 body {
   margin: 0;
+  padding: 20px; /* Adiciona sangria ao conteúdo */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5; /* Cor de fundo suave */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+.login-container h1 {
+  margin-bottom: 20px;
+}
+
+.login-container input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-container button {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #61dafb;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #21a1f1;
+}
+
+.mensagem {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.mensagem-sucesso {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.mensagem-erro {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
 }
